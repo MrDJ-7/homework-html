@@ -1,0 +1,14 @@
+body {
+    background-color: black;
+}
+
+
+p,
+h1,
+div,
+li,
+span,
+ol,
+h2 {
+    color: white;
+}

@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Головна сторінка</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="type.html">Види Ноутбуків</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Випадаюче меню
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="short-info.html">Короткий опис</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="form.html">Форма</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="row align-items-center">
+            <div class="col-3">
+                <h1>Магазин Ноутбуків</h1>
+            </div>
+            <div class="col-4"><img class="w-100"
+                    src="data:image/jpeg;base64,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"
+                    alt="Не вдалось завантажити картинку =("></div>
+            <div class="col-5">
+                <p>Ноутбук (англ. notebook — блокнот, блокнотний ПК) або лаптоп (англ. laptop — lap — коліна, top — на
+                    верху) — портативний персональний комп'ютер, в корпусі якого об'єднані типові компоненти ПК,
+                    включаючи дисплей, клавіатуру і вказівний пристрій (звичайно сенсорна панель або тачпад), а також
+                    акумуляторні батареї.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

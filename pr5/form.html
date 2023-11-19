@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Головна сторінка</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="type.html">Види Ноутбуків</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Випадаюче меню
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="short-info.html">Короткий опис</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="form.html">Форма</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <form action="">
+            <fieldset>
+                <legend>Виберіть який ви хочете ноутбук</legend>
+                <p>Процесор:</p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" id="CPU-R3" name="CPU" value="CPU-R3" checked>
+                    <label class="form-check-label" for="CPU-R3">Ryzen 3</label><br>
+                    <input class="form-check-input" type="radio" id="CPU-R5" name="CPU" value="CPU-R5">
+                    <label class="form-check-label" for="CPU-R5">Ryzen 5</label><br>
+                    <input class="form-check-input" type="radio" id="CPU-R7" name="CPU" value="CPU-R7">
+                    <label class="form-check-label" for="CPU-R7">Ryzen 7</label><br>
+                    <input class="form-check-input" type="radio" id="CPU-I3" name="CPU" value="CPU-I3">
+                    <label class="form-check-label" for="CPU-I3">Core i3</label><br>
+                    <input class="form-check-input" type="radio" id="CPU-I5" name="CPU" value="CPU-I5">
+                    <label class="form-check-label" for="CPU-I5">Core i5</label><br>
+                    <input class="form-check-input" type="radio" id="CPU-I7" name="CPU" value="CPU-I7">
+                    <label class="form-check-label" for="CPU-I7">Core i7</label>
+                </div>
+                <br>
+                <p>Кількість оперативки:</p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" id="RAM-8" name="RAM" value="RAM-8" checked>
+                    <label class="form-check-label" for="RAM-8">8 гіг</label><br>
+                    <input class="form-check-input" type="radio" id="RAM-16" name="RAM" value="RAM-16">
+                    <label class="form-check-label" for="RAM-16">16 гіг</label><br>
+                    <input class="form-check-input" type="radio" id="RAM-32" name="RAM" value="RAM-32">
+                    <label class="form-check-label" for="RAM-32">32 гіг</label><br>
+                </div>
+                <p>Відеокарта:</p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" id="GraficInCPU" name="GC" value="GraficInCPU" checked>
+                    <label class="form-check-label" for="GraficInCPU">Тільки вбудована</label><br>
+                    <input class="form-check-input" type="radio" id="Nvidia" name="GC" value="Nvidia">
+                    <label class="form-check-label" for="Nvidia">Nvidia</label><br>
+                    <input class="form-check-input" type="radio" id="Radeon" name="GC" value="Radeon">
+                    <label class="form-check-label" for="Radeon">Radeon</label><br>
+                </div>
+            </fieldset>
+
+            <div class="mt-4 col-5">
+                <label for="іnputEmail1" class="form-label">Email:</label>
+                <input type="email" class="form-control" id="іnputEmail1">
+            </div>
+
+            <div class="mt-4 col-5">
+                <input type="submit" class="btn btn-outline-dark">
+            </div>
+        </form>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
