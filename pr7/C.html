@@ -10,7 +10,6 @@
     <style>
         .btn-primary-red {
             background-color: red;
-
         }
     </style>
 </head>
@@ -19,41 +18,30 @@
 
     <div class="container">
 
-        <div class="row justify-content-center">
-            <form class="mx-auto col-3">
-                <div class="mb-3">
+        <form class="mx-auto">
+            <div class="row justify-content-around">
+                <div class="col-3">
                     <label for="fname" class="form-label">Ім'я:</label>
+                </div>
+                <div class="col-3">
+                    <label for="mname" class="form-label">По батькові:</label>
+                </div>
+                <div class="col-3">
+                    <label for="lname" class="form-label">Прізвище:</label>
+                </div>
+            </div>
+            <div class="row justify-content-around">
+                <div class="col-3">
                     <input type="text" id="fname" name="fname" class="form-control" placeholder="Booker">
                 </div>
-                <div class="mb-3">
-                    <label for="lname" class="form-label">Прізвище:</label>
-                    <input type="text" id="lname" class="form-control" name="lname" placeholder="DeWitt">
-                </div>
-                <div class="mb-3">
-                    <label for="mname" class="form-label">По батькові:</label>
+                <div class="col-3">
                     <input type="text" id="mname" class="form-control" name="mname" placeholder="Robert">
                 </div>
-                <div class="mb-3">
-                    <label for="inputEmail" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp">
-                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                <div class="col-3">
+                    <input type="text" id="lname" class="form-control" name="lname" placeholder="DeWitt">
                 </div>
-                <div class="mb-3">
-                    <label for="inputPassword" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="inputPassword">
-                </div>
-                <div class="mb-3">
-                    <label for="inputConfirmPassword" class="form-label">Confirm password</label>
-                    <input type="password" class="form-control" id="inputConfirmPassword">
-                </div>
-                <div class="mb-3">
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                </div>
-                <div class="mb-3">
-                    <button type=" reset" class="btn btn-primary-red">Reset</button>
-                </div>
-            </form>
-        </div>
+            </div>
+        </form>
 
     </div>
 
