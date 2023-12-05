@@ -7,15 +7,9 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <style>
-        .btn-primary-red {
-            background-color: red;
-        }
-    </style>
 </head>
 
 <body class="text-center">
-
     <div class="container">
 
         <form class="mx-auto">
@@ -41,7 +35,7 @@
             </div>
             <br>
             <div class="col-12">
-                <p class="form-label">Дата народження:</p>
+                <b class="form-label">Дата народження:</b>
             </div>
             <div class="row justify-content-around flex-column flex-md-row">
                 <div class="col-12 col-md-4 order-1 order-md-1">
@@ -58,7 +52,7 @@
                 </div>
                 <div class="col-12 col-md-4 order-4 order-md-5">
                     <select class="form-select" id="months" name="month">
-                        <option value="n" selected></option>
+                        <option selected></option>
                         <option value="1">Січень</option>
                         <option value="2">Лютий</option>
                         <option value="3">Березень</option>
@@ -79,7 +73,7 @@
             </div>
             <br>
             <div class="col-12">
-                <p class="form-label">Aдреса проживання:</p>
+                <b class="form-label">Aдреса проживання:</b>
             </div>
             <div class="row justify-content-around flex-column flex-md-row">
                 <div class="col-12 col-md-4 order-1 order-md-1">
@@ -103,27 +97,36 @@
             </div>
             <br>
             <div class="col-12">
-                <p class="form-label">Персональні дані:</p>
+                <b class="form-label">Персональні дані:</b>
             </div>
             <div class="row justify-content-around flex-column flex-md-row">
                 <div class="col-12 col-md-4 order-1 order-md-1">
-                    <label for="city" class="form-label">Місто:</label>
+                    <label for="phoneNum" class="form-label">Номер телефону:</label>
                 </div>
                 <div class="col-12 col-md-4 order-3 order-md-2">
-                    <label for="street" class="form-label">Вулиця:</label>
+                    <label for="mail" class="form-label">Електрона адреса:</label>
                 </div>
                 <div class="col-12 col-md-4 order-5 order-md-3">
-                    <label for="apartmentNum">Номер квартири:</label>
+                    <label for="gender">Стать:</label>
                 </div>
                 <div class="col-12 col-md-4 order-2 order-md-4">
-                    <input class="form-control" type="text" id="city" name="city">
+                    <input class="form-control" type="tel" id="phoneNum" name="phoneNum">
                 </div>
                 <div class="col-12 col-md-4 order-4 order-md-5">
-                    <input type="text" id="street" name="street" class="form-control">
+                    <input type="email" id="mail" name="mail" class="form-control">
                 </div>
                 <div class="col-12 col-md-4 order-last order-md-last">
-                    <input class="form-control" type="number" id="apartmentNum" name="apartmentNum">
+                    <select class="form-select" id="gender" name="gender">
+                        <option></option>
+                        <option value="male">Чоловік</option>
+                        <option value="female">Жінка</option>
+                    </select>
                 </div>
+            </div>
+            <br>
+            <div class="mb-3">
+                <button type="reset" class="btn btn-danger">Reset</button>
+                <button type="submit" class="btn btn-primary">Submit</button>
             </div>
 
         </form>
